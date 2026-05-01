@@ -619,4 +619,129 @@ Buddy says woof
 ```
 
 ---
+# 📅 **Day 5: Exploring Polymorphism in Java**
 
+## What is Polymorphism?
+
+Polymorphism allows objects to share the same interface while exhibiting different behaviors based on their specific implementations.
+
+---
+
+## Types of Polymorphism
+
+There are **two types** of polymorphism in Java:
+
+1. **Compile-time Polymorphism** (Method Overloading)
+2. **Runtime Polymorphism** (Method Overriding)
+
+---
+
+## 1. Compile-time Polymorphism / Method Overloading
+
+Compile-time polymorphism occurs when the same class has multiple methods with the **same name** but differ in the **number of parameters or types**.
+
+### Example — `MathOperations.java`
+
+```java
+public class MathOperations {
+
+    // Method to add two integers
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method to add three integers
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Method to add two double variables
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+```
+
+### Main Class — `Main_class.java`
+
+```java
+public class Main_class {
+    public static void main(String[] args) {
+
+        MathOperations math = new MathOperations();
+
+        // Calls the int add(int a, int b) function
+        System.out.println("Sum of 2 and 3: " + math.add(2, 3));
+
+        // Calls the int add(int a, int b, int c) function
+        System.out.println("Sum of 2 and 3 and 4: " + math.add(2, 3, 4));
+
+        // Calls the double add(double a, double b) function
+        System.out.println("Sum of 2.5 and 6.6: " + math.add(2.5, 6.6));
+    }
+}
+```
+
+### Output
+
+```
+Sum of 2 and 3: 5
+Sum of 2 and 3 and 4: 9
+Sum of 2.5 and 6.6: 9.1
+```
+
+---
+
+## 2. Runtime Polymorphism / Method Overriding
+
+Runtime polymorphism occurs when a subclass provides its **specific implementation** of a method defined in its superclass. At runtime, the method to be executed is **dynamically determined** depending on the actual type of the object, allowing more flexible and dynamic behavior.
+
+### Example
+
+```java
+// Superclass
+public class Animal {
+    void sound() {
+        System.out.println("Animal makes Sounds");
+    }
+}
+
+// Subclass Cat
+class Cat extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Cats meows");
+    }
+}
+
+// Subclass Dog
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+// Main Class
+public class RunPoly {
+    public static void main(String[] args) {
+
+        Animal myAnimal;                  // Declared an Animal reference
+
+        myAnimal = new Dog();             // Assign Dog object
+        myAnimal.sound();                 // Outputs: Dog barks
+
+        myAnimal = new Cat();             // Assign Cat object
+        myAnimal.sound();                 // Outputs: Cats meows
+    }
+}
+```
+
+### Output
+
+```
+Dog barks
+Cats meows
+```
+
+---
