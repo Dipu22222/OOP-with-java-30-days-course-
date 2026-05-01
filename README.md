@@ -7,6 +7,7 @@
 ***[Day 1: Classes and Objects](#-day-1-classes-and-objects)<br>
 ***[Day 2: Encapsulation in Java](#-day-2-Encapsulation-in-Java)<br>
 ***[Day 3: Building Java Constructors](#-day-3-building-java-constructors)<br>
+***[Day 4: Understanding Inheritance in Java](#-day-4-understanding-inheritance-in-java)
 
 ### 📅 Day 1: Classes and Objects<br>
 video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br>
@@ -551,7 +552,9 @@ Dog age: 23
 ```
 
 ---
-# Day 4: Understanding Inheritance in Java
+📅 Day 4: Understanding Inheritance in Java<br>
+<b>Video Link: https://www.youtube.com/watch?v=j_VA2Rp6jM0&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=6 <br>
+Source Code:  <br><br>
 
 ## What is Inheritance?
 
