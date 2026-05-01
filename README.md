@@ -554,7 +554,7 @@ Dog age: 23
 ---
 # 📅 **Day 4: Understanding Inheritance in Java**<br><br>
 <b>Video Link: https://www.youtube.com/watch?v=j_VA2Rp6jM0&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=6 <br>
-Source Code:  <br><br>
+Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day4 <br><br>
 
 ## What is Inheritance?
 
