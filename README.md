@@ -4,8 +4,8 @@
 **Language: Java;<br>
 **IDE: Command Line;<br><br><br>
 ## 📅 Progress Tracker<br>
-[Day 1: Classes and Objects](#-day-1-classes-and-objects)<br>
-[Day 2: Encapsulation in Java](#-day-2-Encapsulation-in-Java)
+***[Day 1: Classes and Objects](#-day-1-classes-and-objects)<br>
+***[Day 2: Encapsulation in Java](#-day-2-Encapsulation-in-Java)
 
 ### 📅 Day 1: Classes and Objects<br>
 video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br>
