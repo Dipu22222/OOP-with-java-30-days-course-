@@ -551,5 +551,69 @@ Dog age: 23
 ```
 
 ---
+# Day 4: Understanding Inheritance in Java
 
+## What is Inheritance?
+
+Inheritance is a concept in which one class (known as the **child class**) derives properties and methods from another class (the **parent class**).
+
+---
+
+## Key Terminology
+
+| Term | Definition |
+|------|------------|
+| **Superclass** | A class whose properties and methods are inherited by another class. |
+| **Subclass** | A class that inherits the properties of the superclass. |
+| **`extends` keyword** | Used to indicate inheritance from a superclass. |
+
+> **Note:** A subclass inherits the `public` and `protected` elements of the superclass.
+
+---
+
+## Code Example
+
+### Superclass — `Animal.java`
+
+```java
+public class Animal {
+    String name;
+
+    void eat() {
+        System.out.println(name + " is eating");
+    }
+}
+```
+
+### Subclass — `Dog.java`
+
+```java
+class Dog extends Animal {
+    void bark() {
+        System.out.println(name + " says woof");
+    }
+}
+```
+
+### Main Class — `MainAnimal.java`
+
+```java
+public class MainAnimal {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.name = "Buddy";       // Setting the name
+        myDog.eat();                 // Inherited method from Animal superclass
+        myDog.bark();                // Method from Dog class
+    }
+}
+```
+
+### Output
+
+```
+Buddy is eating
+Buddy says woof
+```
+
+---
 
