@@ -9,7 +9,7 @@
 ***[Day 3: Building Java Constructors](#-day-3-building-java-constructors)<br>
 ***[Day 4: Understanding Inheritance in Java](#-day-4-understanding-inheritance-in-java)
 
-### 📅 Day 1: Classes and Objects<br>
+# 📅 Day 1: Classes and Objects<br>
 video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br>
 Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day1 <br>
 
@@ -206,7 +206,7 @@ public class Circle extends Shape {
 ```
 <br><br><br>
 
-### 📅 Day 2: Encapsulation in Java<br>
+# 📅 Day 2: Encapsulation in Java<br>
 Video Link: https://www.youtube.com/watch?v=HZUUYnIZO_0&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=4&t=37s <br>
 Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day2    <br>
 
@@ -339,7 +339,7 @@ age can't be negative
 
 ---
 
-## 📅 Day 3: Building Java Constructors<br><br>
+# 📅 Day 3: Building Java Constructors<br><br>
 Video Link: https://www.youtube.com/watch?v=acfR5vRTZvc&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=5 <br>
 Source Code:  <br>
 
