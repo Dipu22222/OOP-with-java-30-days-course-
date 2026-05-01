@@ -337,5 +337,216 @@ age can't be negative
 
 ---
 
+## 📅 Day 3: Building Java Constructors
+
+---
+
+## 📖 What is a Constructor?
+
+A **constructor** is a block of code within a class responsible for **initializing the state of an object**. It is a method-like block of code and serves as an **"Object Builder"**.
+
+---
+
+## 🔑 Characteristics of Constructors
+
+- **(i)** Have the **same name** as the class it belongs to
+- **(ii)** Have **no return type**
+- **(iii)** **Automatically invoked** when an object of the class is created, playing a crucial role for initializing objects
+- **(iv)** Can be **overloaded** — allowing multiple constructors within the same class with different sets of parameters, providing greater flexibility in object creation
+
+---
+
+## 🏗️ Types of Constructors
+
+Java has **three main constructors:**
+
+1. Default Constructor
+2. Parameterized Constructor
+3. No Argument Constructor
+
+---
+
+### 1️⃣ Default Constructor
+
+A **default constructor** is automatically provided by Java when no constructors are explicitly defined in a class. It takes no parameters and is used to initialize the object with default values.
+
+#### Example:
+
+```java
+package Day3;
+
+public class Dog {
+
+    // Attributes
+    String name;
+
+    // Default constructor
+    Dog() {
+        name = "Unknown";
+    }
+
+    // Display information
+    void displayInfo() {
+        System.out.println("Dog name: " + name);
+    }
+}
+```
+
+```java
+package Day3;
+
+public class MainDog {
+    public static void main(String[] args) {
+
+        // Calls the default constructor
+        Dog myDog = new Dog();
+        myDog.displayInfo();
+    }
+}
+```
+
+---
+
+### 2️⃣ Parameterized Constructor
+
+A **parameterized constructor** allows values to be passed to an object at the time of creation, enabling **specific initialization** of the object's attributes.
+
+#### Example:
+
+```java
+package Day3;
+
+public class DogName {
+
+    String Name;
+
+    // Parameterized constructor
+    public DogName(String Name) {
+        this.Name = Name;
+    }
+
+    public void display() {
+        System.out.println("The Dog Name: " + Name);
+    }
+}
+```
+
+```java
+package Day3;
+
+public class MainDogName {
+    public static void main(String[] args) {
+        DogName myDog = new DogName("Angry");
+        myDog.display();
+    }
+}
+```
+
+---
+
+### 3️⃣ No Argument Constructor
+
+A **No Argument Constructor** is a type of default constructor that does **not accept any arguments or parameters**. It is explicitly written by the programmer (unlike the default constructor which Java provides automatically).
+
+#### Example:
+
+```java
+package Day3;
+
+public class myCar {
+
+    String model;
+    int year;
+
+    // No argument constructor with default attribute values
+    myCar() {
+        model = "Default";
+        year = 2025;
+    }
+
+    void displayinfo() {
+        System.out.println("Car model: " + model);
+        System.out.println("Car year: " + year);
+    }
+}
+```
+
+---
+
+## 🔄 Constructor Overloading (Buffer Overflow)
+
+**Constructor Overloading** enables multiple constructors with different parameter lists within the same class.
+
+#### Example:
+
+```java
+
+public class OverloadDog {
+
+    String name;
+    int age;
+
+    // Default constructor
+    OverloadDog() {
+        name = "UNKNOWN";
+        age = 0;
+    }
+
+    // Parameterized constructor with one parameter
+    OverloadDog(String name) {
+        this.name = name;
+        age = 0;
+    }
+
+    // Parameterized constructor with two parameters
+    OverloadDog(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void display() {
+        System.out.println("Dog Name: " + name);
+        System.out.println("Dog age: " + age);
+    }
+}
+```
+
+```java
+
+public class OverloadDogMain {
+    public static void main(String[] args) {
+
+        // Calls the default constructor
+        OverloadDog Dog1 = new OverloadDog();
+
+        // Calls the one parameter constructor
+        OverloadDog Dog2 = new OverloadDog("Charlie");
+
+        // Calls the two parameter constructor
+        OverloadDog Dog3 = new OverloadDog("kixxxn", 23);
+
+        Dog1.display();
+        Dog2.display();
+        Dog3.display();
+    }
+}
+```
+
+---
+
+## 🖥️ Expected Output
+
+```
+Dog Name: UNKNOWN
+Dog age: 0
+
+Dog Name: Charlie
+Dog age: 0
+
+Dog Name: kixxxn
+Dog age: 23
+```
+
+---
 
 
