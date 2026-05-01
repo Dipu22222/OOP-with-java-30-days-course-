@@ -206,7 +206,7 @@ public class Circle extends Shape {
 
 ### 📅 Day 2: Encapsulation in Java<br>
 Video Link: https://www.youtube.com/watch?v=HZUUYnIZO_0&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=4&t=37s <br>
-Source Code:    <br>
+Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day2    <br>
 
 ---
 
