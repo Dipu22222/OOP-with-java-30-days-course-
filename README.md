@@ -198,6 +198,136 @@ public class Circle extends Shape {
     }
 }
 ```
+<br><br><br>
+
+## 📅 Day 2: Encapsulation in Java
+
+---
+
+## 📖 What is Encapsulation?
+
+**Encapsulation** is the process of **bundling data** (known as *attributes*) and the **methods** (known as *functions*) that operate on the data into a **single unit** — a `class`.
+
+It restricts direct access to an object's internal state and only exposes what is necessary through controlled methods.
+
+---
+
+## 🔑 Key Concepts
+
+| Concept | Description |
+|--------|-------------|
+| **Private attributes** | Data fields hidden from outside the class |
+| **Public constructor** | Initializes attributes when creating objects |
+| **Getter methods** | Allow reading private data safely |
+| **Setter methods** | Allow modifying private data with validation |
+
+---
+
+## 💻 Code Example
+
+### `Person.java` — The Encapsulated Class
+
+```java
+
+public class person {
+
+    // Private attributes
+    private String name;
+    private int age;
+
+    // Initializing the attributes through public constructor while creating objects
+    public person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Public method to get the name
+    public String getName() {
+        return name;
+    }
+
+    // Public method to set the name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Public method to get age
+    public int getAge() {
+        return age;
+    }
+
+    // Public method to set age (with validation)
+    public void setAge(int age) {
+        if (age >= 0) {
+            this.age = age;
+        } else {
+            System.out.println("age can't be negative");
+        }
+    }
+}
+```
+
+---
+
+### `MainPerson.java` — Using the Class
+
+```java
+
+public class MainPerson {
+    public static void main(String[] args) {
+
+        // Creating a new person object
+        person person = new person("Dipu Mondol", 23);
+
+        // Accessing the name using getter method
+        System.out.println("Name: " + person.getName());
+
+        // Accessing the age using getter method
+        System.out.println("Age: " + person.getAge());
+
+        System.out.println("\n****** UPDATED USING SETTER METHOD ******\n");
+
+        // Modifying information using setter
+        person.setName("Dipto Mondol");
+        person.setAge(28);
+
+        // Displaying the updated information
+        System.out.println("Updated Name: " + person.getName());
+        System.out.println("Updated Age: " + person.getAge());
+
+        // Trying to set negative age
+        person.setAge(-20);
+    }
+}
+```
+
+---
+
+## 🖥️ Expected Output
+
+```
+Name: Dipu Mondol
+Age: 23
+
+****** UPDATED USING SETTER METHOD ******
+
+Updated Name: Dipto Mondol
+Updated Age: 28
+age can't be negative
+```
+
+---
+
+## ✅ Applications of Encapsulation
+
+- **(i)** Hides private data from outside access
+- **(ii)** Prevents unauthorised access to sensitive fields
+- **(iii)** Maintains security and data integrity
+- **(iv)** In API development — exposes only necessary methods while hiding external complexity
+
+---
+
+---
 
 ---
 
