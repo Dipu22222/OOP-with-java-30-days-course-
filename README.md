@@ -3,7 +3,7 @@
 **ID: IT-24040;<br>
 **Language: Java;<br>
 **IDE: Command Line;<br><br><br>
-## 📅 Progress Tracker<br><br>
+## 📅 Progress Tracker<br>
 [Day 1: Classes and Objects](#-day-1-classes-and-objects)
 
 ### 📅 Day 1: Classes and Objects<br>
