@@ -11,8 +11,8 @@
 ***[Day 5: Exploring Polymorphism in Java](#-day-5-exploring-polymorphism-in-java)<br>
 
 # 📅 Day 1: Classes and Objects<br>
-video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br>
-Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day1 <br>
+**video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br>
+**Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day1 <br>
 
 ## 📚 Table of Contents
 
@@ -208,8 +208,8 @@ public class Circle extends Shape {
 <br><br><br>
 
 # 📅 Day 2: Encapsulation in Java<br>
-Video Link: https://www.youtube.com/watch?v=HZUUYnIZO_0&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=4&t=37s <br>
-Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day2    <br>
+**Video Link: https://www.youtube.com/watch?v=HZUUYnIZO_0&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=4&t=37s <br>
+**Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day2    <br>
 
 ---
 
@@ -341,8 +341,8 @@ age can't be negative
 ---
 
 # 📅 Day 3: Building Java Constructors<br><br>
-Video Link: https://www.youtube.com/watch?v=acfR5vRTZvc&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=5 <br>
-Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day3 <br>
+**Video Link: https://www.youtube.com/watch?v=acfR5vRTZvc&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=5 <br>
+**Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day3 <br>
 
 ---
 
@@ -554,8 +554,8 @@ Dog age: 23
 
 ---
 # 📅 **Day 4: Understanding Inheritance in Java**<br><br>
-<b>Video Link: https://www.youtube.com/watch?v=j_VA2Rp6jM0&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=6 <br>
-Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day4 <br><br>
+<b>**Video Link: https://www.youtube.com/watch?v=j_VA2Rp6jM0&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=6 <br>
+**Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day4 <br><br>
 
 ## What is Inheritance?
 
@@ -621,8 +621,8 @@ Buddy says woof
 
 ---
 # 📅 **Day 5: Exploring Polymorphism in Java**<br><br>
-Video Link: https://www.youtube.com/watch?v=bLke13zY4rg&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=7 <br>
-Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day5  <br>
+**Video Link: https://www.youtube.com/watch?v=bLke13zY4rg&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=7 <br>
+**Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day5  <br>
 
 ## What is Polymorphism?
 
