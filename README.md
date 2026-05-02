@@ -9,6 +9,7 @@
 ***[Day 3: Building Java Constructors](#-day-3-building-java-constructors)<br>
 ***[Day 4: Understanding Inheritance in Java](#-day-4-understanding-inheritance-in-java)<br>
 ***[Day 5: Exploring Polymorphism in Java](#-day-5-exploring-polymorphism-in-java)<br>
+***[Day 6: Applying Abstraction in Java](#-day-6-applying-abstraction-in-java)<br>
 
 # 📅 Day 1: Classes and Objects<br>
 **video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br>
@@ -745,6 +746,113 @@ public class RunPoly {
 ```
 Dog barks
 Cats meows
+```
+
+---
+# 📅 Day 6: Applying Abstraction in Java<br><br>
+**Class Link: https://www.youtube.com/watch?v=1SXyi3DK-88&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=8 <br>
+**Source Code:  <br>
+
+
+## Interface:
+
+An **interface** in Java is a reference type that defines a contract for classes to follow. It can contain:
+
+- Constants
+- Method signatures
+- Default methods
+- Static methods
+- Nested types
+
+> ⚠️ An interface **cannot** have instance fields or constructors.
+
+### Example: Defining and Implementing an Interface
+
+```java
+// Defining an Interface
+interface Animal {
+    // Method signature
+    void sound();
+}
+
+// Implementing interface in a class
+class Dog implements Animal {
+    public void sound() {
+        System.out.println("barks");
+    }
+}
+
+class Cat implements Animal {
+    public void sound() {
+        System.out.println("meow");
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+
+        dog.sound();
+        cat.sound();
+    }
+}
+```
+
+**Output:**
+```
+barks
+meow
+```
+
+---
+
+## Abstract Class
+
+In Java, an **abstract class** is a class that:
+
+- **Cannot be instantiated** (you cannot create an object from it directly)
+- Is meant to be **extended by other classes**
+- Is used to achieve **partial abstraction**
+
+An abstract class can have:
+
+- **Abstract Methods** — methods without a body, declared with the `abstract` keyword, that must be implemented by subclasses.
+- **Concrete Methods** — methods with a body that can be inherited as-is or overridden.
+
+### Example: Defining and Using an Abstract Class
+
+```java
+// Defining an abstract class
+abstract class Shape {
+    abstract void draw();     // abstract method
+
+    void display() {          // concrete method
+        System.out.println("This is a shape");
+    }
+}
+
+// Concrete subclass extending the abstract class
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing circle");
+    }
+}
+
+public class MainShape {
+    public static void main(String[] args) {
+        Shape shape = new Circle();
+
+        shape.draw();
+        shape.display();
+    }
+}
+```
+
+**Output:**
+```
+Drawing circle
+This is a shape
 ```
 
 ---
