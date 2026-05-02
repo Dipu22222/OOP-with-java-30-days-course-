@@ -751,7 +751,7 @@ Cats meows
 ---
 # 📅 Day 6: Applying Abstraction in Java<br><br>
 **Class Link: https://www.youtube.com/watch?v=1SXyi3DK-88&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=8 <br>
-**Source Code:  <br>
+**Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day6 <br>
 
 
 ## Interface:
