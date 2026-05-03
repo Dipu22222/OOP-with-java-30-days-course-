@@ -10,6 +10,7 @@
 ***[Day 4: Understanding Inheritance in Java](#-day-4-understanding-inheritance-in-java)<br>
 ***[Day 5: Exploring Polymorphism in Java](#-day-5-exploring-polymorphism-in-java)<br>
 ***[Day 6: Applying Abstraction in Java](#-day-6-applying-abstraction-in-java)<br>
+***[Day 7: Using Inner Classes in Java](#-day-7-using-inner-classes-in-java)
 
 # 📅 Day 1: Classes and Objects<br>
 **video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br>
@@ -853,6 +854,177 @@ public class MainShape {
 ```
 Drawing circle
 This is a shape
+```
+
+---
+# 📅 Day 7: Using Inner Classes in Java<br><br>
+Video Link: https://www.youtube.com/watch?v=lsJ9QjJPbx8&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=9&t=145s <br><br>
+Source Code:  <br><br>
+
+## What are Inner Classes?
+
+**Inner classes** allow grouping of logically related classes together, improving **encapsulation** and **readability**.
+
+Java has **4 types** of inner classes:
+
+| Type | Description |
+|---|---|
+| Non-static Inner Class | Can access both static and non-static members of the outer class |
+| Static Nested Class | Cannot access non-static members of the outer class directly |
+| Method-Local Inner Class | Defined within a method; can only be accessed within that method |
+| Anonymous Inner Class | Has no name; used to instantiate a class not reused elsewhere |
+
+---
+
+## 1. Non-Static Inner Class
+
+Can access **both static and non-static** members of the outer class.
+
+```java
+class OuterClass {
+    int outerVariable = 10;
+
+    class InnerClass {
+        void display() {
+            System.out.println("Outer variable: " + outerVariable);
+        }
+    }
+}
+
+public class OuterMain {
+    public static void main(String[] args) {
+        OuterClass outer = new OuterClass();           // create an instance of outer class
+        OuterClass.InnerClass inner = outer.new InnerClass();
+        inner.display();
+    }
+}
+```
+
+---
+
+## 2. Static Nested Class
+
+A `static` nested class **cannot access non-static members** of the outer class directly.
+
+```java
+public class StaticOuterClass {
+    static int staticVariable = 20;
+
+    static class StaticNestedClass {
+        void show() {
+            System.out.println("Static variable value: " + staticVariable);
+        }
+    }
+}
+
+public class NestedMain {
+    public static void main(String[] args) {
+        StaticOuterClass.StaticNestedClass nested =
+            new StaticOuterClass.StaticNestedClass();
+        nested.show();
+    }
+}
+```
+
+---
+
+## 3. Method-Local Inner Class
+
+Defined **inside a method** and can only be accessed within that method.
+
+```java
+public class MethodOuterClass {
+    void myMethod() {
+        class MethodInner {
+            void display() {
+                System.out.println("Inside method local inner class");
+            }
+        }
+        MethodInner inner = new MethodInner();
+        inner.display();
+    }
+}
+```
+
+---
+
+## 4. Anonymous Inner Class
+
+Has **no name** and is used to instantiate a class not reused elsewhere. It is often used to create a subclass or implement an interface on the fly.
+
+```java
+interface Greeting {
+    void greet();
+}
+
+public class AnonymousMain {
+    public static void main(String[] args) {
+        Greeting greeting = new Greeting() {
+            @Override
+            public void greet() {
+                System.out.println("Hello from Anonymous inner class");
+            }
+        };
+        greeting.greet();
+    }
+}
+```
+
+---
+
+## Practical Example: Library with Inner Class
+
+A real-world example using an inner class `Book` inside an outer class `Library`.
+
+```java
+public class Library {
+    // Outer class variable
+    private String libraryName;
+
+    // Constructor for Library class
+    public Library(String libraryName) {
+        this.libraryName = libraryName;
+    }
+
+    // Inner class representing a book
+    class Book {
+        private String title;
+        private String author;
+
+        // Constructor for Book class
+        public Book(String title, String author) {
+            this.title = title;
+            this.author = author;
+        }
+
+        // Method to display book details
+        public void display() {
+            System.out.println("Library: " + libraryName);
+            System.out.println("Title: " + title);
+            System.out.println("Author: " + author);
+        }
+    }
+}
+
+public class LibraryMain {
+    public static void main(String[] args) {
+        // Create an instance of Library
+        Library myLibrary = new Library("City Library");
+
+        // Create an instance of Book using the outer instance
+        Library.Book myBook = myLibrary.new Book("1984", "George Well");
+
+        // Display book information
+        myBook.display();
+    }
+}
+```
+
+**Output:**
+```
+Library: City Library
+Title: 1984
+Author: George Well
 ```
 
 ---
