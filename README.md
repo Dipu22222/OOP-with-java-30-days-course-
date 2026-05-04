@@ -10,7 +10,8 @@
 ***[Day 4: Understanding Inheritance in Java](#-day-4-understanding-inheritance-in-java)<br>
 ***[Day 5: Exploring Polymorphism in Java](#-day-5-exploring-polymorphism-in-java)<br>
 ***[Day 6: Applying Abstraction in Java](#-day-6-applying-abstraction-in-java)<br>
-***[Day 7: Using Inner Classes in Java](#-day-7-using-inner-classes-in-java)
+***[Day 7: Using Inner Classes in Java](#-day-7-using-inner-classes-in-java)<br>
+***[Day 8: Introduction to Java Collection Framework](#-day-8-introduction-to-java-collection-framework)<br>
 
 # 📅 Day 1: Classes and Objects<br>
 **video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br>
@@ -1025,6 +1026,166 @@ public class LibraryMain {
 Library: City Library
 Title: 1984
 Author: George Well
+```
+
+---
+# 📅 Day 8: Introduction to Java Collection Framework
+
+## What is a Java Collection?
+
+A **Java Collection** is a framework that provides a set of classes and interfaces to store and manipulate groups of objects. There are three main types:
+
+| Type | Description |
+|------|-------------|
+| **List** | An ordered collection that allows duplicate elements and maintains insertion order. Common implementations: `ArrayList`, `LinkedList` |
+| **Set** | An unordered collection that does **not** allow duplicate elements. Common implementations: `HashSet`, `TreeSet` |
+| **Map** | An unordered collection of key-value pairs where each key is unique. Common implementations: `HashMap`, `TreeMap` |
+
+---
+
+## 1. List — Using ArrayList
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExample {
+    public static void main(String[] args) {
+
+        // Creating a list
+        List<String> fruits = new ArrayList<>();
+
+        // Adding elements
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Cherry");
+
+        // Displaying the list
+        System.out.println("Fruits are: " + fruits);
+
+        // Accessing an element
+        String firstFruit = fruits.get(0);
+        System.out.println("First Fruit: " + firstFruit);
+    }
+}
+```
+
+### Output
+```
+Fruits are: [Apple, Banana, Cherry]
+First Fruit: Apple
+```
+
+---
+
+## 2. List — Using LinkedList
+
+```java
+import java.util.LinkedList;
+
+public class LinkedListExample {
+    public static void main(String[] args) {
+
+        // Creating a LinkedList
+        LinkedList<String> Animal = new LinkedList<>();
+
+        // Adding elements
+        Animal.add("Cow");
+        Animal.add("Cat");
+        Animal.add("GOAT");
+
+        // Displaying the elements
+        System.out.println("The Animals: " + Animal);
+    }
+}
+```
+
+### Output
+```
+The Animals: [Cow, Cat, GOAT]
+```
+
+---
+
+## 3. Set Collections
+
+### HashSet vs TreeSet
+
+| Feature | HashSet | TreeSet |
+|---------|---------|---------|
+| Order | Does **not** maintain any order | Maintains **sorted** order |
+| Null values | Allows null values | Does **not** allow null values |
+| Duplicates | Not allowed | Not allowed |
+
+### Example — HashSet
+
+```java
+import java.util.HashSet;
+
+public class HashSetExample {
+    public static void main(String[] args) {
+
+        // Creating a HashSet
+        HashSet<String> Colors = new HashSet<>();
+
+        // Adding elements
+        Colors.add("Red");
+        Colors.add("Blue");
+        Colors.add("Green");
+        Colors.add("Red");   // Duplicate element — won't be printed
+
+        // Displaying the elements
+        System.out.println("The colors: " + Colors);
+    }
+}
+```
+
+### Output
+```
+The colors: [Red, Blue, Green]
+```
+
+---
+
+## 4. Map Collections
+
+### HashMap vs TreeMap
+
+| Feature | HashMap | TreeMap |
+|---------|---------|---------|
+| Null values | Allows null values | Allows null values |
+| Order | No guaranteed order | Maintains keys in **sorted** order |
+
+### Example — HashMap
+
+```java
+import java.util.HashMap;
+
+public class HashMapExample {
+    public static void main(String[] args) {
+
+        // Creating a hash map
+        HashMap<String, Integer> ageMap = new HashMap<>();
+
+        // Adding key-value pairs
+        ageMap.put("Alice", 30);
+        ageMap.put("Bob", 25);
+        ageMap.put("Charlie", 35);
+
+        // Displaying the pairs
+        System.out.println("The AgeMap: " + ageMap);
+
+        // Accessing HashMap by key
+        int AliceAge = ageMap.get("Alice");
+        System.out.println("The age of Alice: " + AliceAge);
+    }
+}
+```
+
+### Output
+```
+The AgeMap: {Bob=25, Alice=30, Charlie=35}
+The age of Alice: 30
 ```
 
 ---
