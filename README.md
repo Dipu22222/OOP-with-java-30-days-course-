@@ -1030,7 +1030,9 @@ Author: George Well
 ```
 
 ---
-# 📅 Day 8: Introduction to Java Collection Framework
+# 📅 Day 8: Introduction to Java Collection Framework<br><br>
+**Vedio Link: https://www.youtube.com/watch?v=TDHaeHAlPFg&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=10 <br><br>
+<br>Source Code: <br>
 
 ## What is a Java Collection?
 
