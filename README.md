@@ -14,7 +14,8 @@
 ***[Day 8: Introduction to Java Collection Framework](#-day-8-introduction-to-java-collection-framework)<br>
 
 # 📅 Day 1: Classes and Objects<br>
-**video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br>
+**video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br><br>
+
 **Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day1 <br>
 
 ## 📚 Table of Contents
