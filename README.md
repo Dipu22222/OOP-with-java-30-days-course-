@@ -12,6 +12,8 @@
 ***[Day 6: Applying Abstraction in Java](#-day-6-applying-abstraction-in-java)<br>
 ***[Day 7: Using Inner Classes in Java](#-day-7-using-inner-classes-in-java)<br>
 ***[Day 8: Introduction to Java Collection Framework](#-day-8-introduction-to-java-collection-framework)<br>
+***[Day 9: Working with Lists — ArrayList and LinkedList](#-day-9-working-with-lists-arraylist-and-linkedlist)<br>
+
 
 # 📅 Day 1: Classes and Objects<br>
 **video Link: https://www.youtube.com/watch?v=lWFzm8qIR1c&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=3 <br><br>
@@ -1192,3 +1194,110 @@ The age of Alice: 30
 ```
 
 ---
+# 📅 Day 9: Working with Lists — ArrayList and LinkedList
+
+## What is a List in Java?
+
+A **List** in Java is like a line of numbered boxes. They store ordered elements, allow duplicates, and enable access to items by their position. Lists in Java are classified as **ArrayList** and **LinkedList**.
+
+---
+
+## 1. ArrayList
+
+An ArrayList class in Java uses a **dynamic array** to store elements, automatically resizing when needed. Array lists are suitable for scenarios where **frequent fast access** to elements by index is required. However, these lists are **unsuitable for frequent modifications**.
+
+### Example — `ArrayListExample.java`
+
+```java
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+
+        // Creating an Array List
+        ArrayList<String> fruits = new ArrayList<>();
+
+        // Adding elements to the existing arraylist
+        fruits.add("Mango");
+        fruits.add("Orange");
+        fruits.add("Water Fruit");
+
+        // Accessing an element
+        System.out.println("First Fruit: " + fruits.get(0));
+
+        // Removing an element
+        fruits.remove("Water Fruit");
+
+        // Printing all elements
+        System.out.println("Fruits are: " + fruits);
+    }
+}
+```
+
+### Output
+```
+First Fruit: Mango
+Fruits are: [Mango, Orange]
+```
+
+---
+
+## 2. LinkedList
+
+A LinkedList uses a **doubly linked list** to store elements. It offers dynamic resizing, **faster insertions and deletions** than ArrayList, and is ideal for **Queue (Q) operations**.
+
+### How it works
+
+```
+← [10] ⇄ [10] ⇄ [10] ⇄ [10] →
+```
+
+Each node points to both the previous and the next node.
+
+### Example — `LinkedListExample.java`
+
+```java
+import java.util.LinkedList;
+
+public class LinkedListExample {
+    public static void main(String[] args) {
+
+        // Creating a Linked List
+        LinkedList<String> colors = new LinkedList<>();
+
+        // Adding elements to the LinkedList
+        colors.add("Red");
+        colors.add("Green");
+        colors.add("Blue");
+
+        // Accessing an element
+        System.out.println("First Color: " + colors.get(0));
+
+        // Remove an element
+        colors.remove("Green");
+
+        // Printing the elements
+        System.out.println("The colors: " + colors);
+    }
+}
+```
+
+### Output
+```
+First Color: Red
+The Colors: [Red, Blue]
+```
+
+---
+
+## Which One To Choose?
+
+| Feature | ArrayList | LinkedList |
+|---------|-----------|------------|
+| **Access** | ✅ Access elements quickly | ❌ Slower random access |
+| **Modifications** | ❌ Slow add/remove in middle | ✅ Add or remove frequently |
+| **List Size** | ✅ Maintain a stable list size | ✅ Dynamic size |
+| **Use Case** | General purpose list | Implementing data structures like stacks and queues |
+
+> **Rule of thumb:** Use `ArrayList` when you read often, use `LinkedList` when you modify often.
+
