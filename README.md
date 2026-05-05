@@ -12,7 +12,7 @@
 ***[Day 6: Applying Abstraction in Java](#-day-6-applying-abstraction-in-java)<br>
 ***[Day 7: Using Inner Classes in Java](#-day-7-using-inner-classes-in-java)<br>
 ***[Day 8: Introduction to Java Collection Framework](#-day-8-introduction-to-java-collection-framework)<br>
-***[Day 9: Working with Lists — ArrayList and LinkedList](#day-9-working-with-lists--arraylist-and-linkedlist)<br>
+***[Day 9: Working with Lists — ArrayList and LinkedList](#day-9-working-with-lists---arraylist-and-linkedlist)<br>
 
 
 # 📅 Day 1: Classes and Objects<br>
@@ -1195,7 +1195,7 @@ The age of Alice: 30
 ```
 
 ---
-# 📅 Day 9: Working with Lists — ArrayList and LinkedList<br>
+# 📅 Day 9: Working with Lists - ArrayList and LinkedList<br>
 **Vedio Link: https://www.youtube.com/watch?v=q-5D9Z9BCVI&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=11<br><br>
 **Source Code:  <br><br>
 
