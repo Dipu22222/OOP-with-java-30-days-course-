@@ -1032,7 +1032,8 @@ Author: George Well
 ```
 
 ---
-# 📅 Day 8: Introduction to Java Collection Framework<br><br>
+# 📅 Day 8: Introduction to Java Collection Framework<br>
+
 **Vedio Link: https://www.youtube.com/watch?v=TDHaeHAlPFg&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=10 <br><br>
 <br>Source Code: https://github.com/Dipu22222/OOP-with-java-30-days-course-/tree/main/Day8<br><br>
 
@@ -1194,7 +1195,9 @@ The age of Alice: 30
 ```
 
 ---
-# 📅 Day 9: Working with Lists — ArrayList and LinkedList
+# 📅 Day 9: Working with Lists — ArrayList and LinkedList<br>
+**Vedio Link: https://www.youtube.com/watch?v=q-5D9Z9BCVI&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=11<br><br>
+**Source Code:  <br><br>
 
 ## What is a List in Java?
 
