@@ -13,6 +13,9 @@
 ***[Day 7: Using Inner Classes in Java](#-day-7-using-inner-classes-in-java)<br>
 ***[Day 8: Introduction to Java Collection Framework](#-day-8-introduction-to-java-collection-framework)<br>
 ***[Day 9: Working with Lists ArrayList and LinkedList](#-day-9-working-with-lists-arraylist-and-linkedlist)<br>
+***[Day 10: Exploring Sets HashSet and TreeSet](#-day-10-exploring-sets-hashset-and-treeset)<br>
+
+
 
 
 # 📅 Day 1: Classes and Objects<br>
@@ -1303,4 +1306,143 @@ The Colors: [Red, Blue]
 | **Use Case** | General purpose list | Implementing data structures like stacks and queues |
 
 > **Rule of thumb:** Use `ArrayList` when you read often, use `LinkedList` when you modify often.
+<br>
+<br>
+# 📅 Day 10: Exploring Sets HashSet and TreeSet
 
+## What is a Set?
+
+A **Set** is a collection type or data structure that stores **unique elements**, ensuring no duplicates. Its primary purpose is to maintain a unique collection of items.
+
+---
+
+## 1. HashSet
+
+HashSet uses a **hash table** for storage, offering fast performance with **constant time** complexity for basic operations such as `add`, `remove`, and `contains`.
+
+- Does **not** allow duplicate elements
+- Permits **null** elements
+- Does **not** maintain any specific order
+
+### Example — `HashSetExample.java`
+
+```java
+import java.util.HashSet;
+
+public class HashSetExample {
+    public static void main(String[] args) {
+
+        // Creating a HashSet
+        HashSet<String> fruits = new HashSet<>();
+
+        // Adding elements to the HashSet
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Chernay");
+        fruits.add("Banana");   // Duplicate — will not be added
+
+        // Displaying the HashSet
+        System.out.println("Fruits in the HashSet: " + fruits);
+
+        // Checking if an element exists
+        if(fruits.contains("Apple")) {
+            System.out.println("Apple is present in the hashset");
+        }
+
+        // Remove an element
+        fruits.remove("Apple");
+
+        // After removal
+        System.out.println("The fruits are: " + fruits);
+    }
+}
+```
+
+### Output
+```
+Fruits in the HashSet: [Apple, Chernay, Banana]
+Apple is present in the hashset
+The fruits are: [Chernay, Banana]
+```
+
+---
+
+## 2. TreeSet
+
+TreeSet uses a **red-black tree** structure. It maintains a **sorted order** of elements based on their natural ordering or a specified comparator.
+
+- Does **not** allow duplicate elements
+- Maintains elements in **sorted order**
+- Provides **logarithmic time** performance — O(log n) for basic operations
+- Does **not** allow null elements
+
+### Example — `TreeSetExample.java`
+
+```java
+import java.util.TreeSet;
+
+public class TreeSetExample {
+    public static void main(String[] args) {
+
+        // Creating a TreeSet
+        TreeSet<Integer> numbers = new TreeSet<>();
+
+        // Adding elements
+        numbers.add(1);
+        numbers.add(4);
+        numbers.add(3);
+        numbers.add(5);
+        numbers.add(3);   // Duplicate — will not be allowed
+
+        // Displaying the numbers elements
+        System.out.println("The numbers are: " + numbers);
+
+        // Checking if an element exists or not
+        if(numbers.contains(5)) {
+            System.out.println("The number 5 is in the numbers TreeSet");
+        }
+
+        // Remove an element
+        numbers.remove(5);
+        System.out.println("After removal the numbers: " + numbers);
+    }
+}
+```
+
+### Output
+```
+The numbers are: [2, 3, 4, 5]
+The number 5 is in the numbers TreeSet
+After removal the numbers: [2, 3, 4]
+```
+
+---
+
+## HashSet vs TreeSet
+
+| Feature | HashSet | TreeSet |
+|---------|---------|---------|
+| **Internal Structure** | Hash Table | Red-Black Tree |
+| **Order** | ❌ No guaranteed order | ✅ Sorted (natural or custom) |
+| **Performance** | ✅ O(1) avg for add/remove/contains | ⚠️ O(log n) for add/remove/contains |
+| **Null elements** | ✅ Allows one null | ❌ Does not allow null |
+| **Duplicates** | ❌ Not allowed | ❌ Not allowed |
+| **Memory** | More memory (hash table overhead) | Less memory (tree nodes) |
+
+---
+
+## When To Use Which?
+
+### Use **HashSet** when:
+- You need **fastest possible** performance
+- You **don't care** about the order of elements
+- You need to store a **null** element
+- Checking membership frequently (`contains`)
+
+### Use **TreeSet** when:
+- You need elements in **sorted order**
+- You need operations like `first()`, `last()`, `headSet()`, `tailSet()`
+- You want a **NavigableSet** with range queries
+- Null elements are **not** needed
+
+> **Rule of thumb:** Default to `HashSet` for speed. Switch to `TreeSet` only when sorted order matters.
