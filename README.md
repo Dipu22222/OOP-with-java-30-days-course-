@@ -1306,9 +1306,9 @@ The Colors: [Red, Blue]
 | **Use Case** | General purpose list | Implementing data structures like stacks and queues |
 
 > **Rule of thumb:** Use `ArrayList` when you read often, use `LinkedList` when you modify often.
-<br>
-<br>
-#📅 Day 10: Exploring Sets HashSet and TreeSet<br><br>
+```
+---
+# 📅 Day 10: Exploring Sets HashSet and TreeSet<br><br>
 
 ## What is a Set?
 
