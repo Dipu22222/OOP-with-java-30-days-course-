@@ -1307,7 +1307,8 @@ The Colors: [Red, Blue]
 
 > **Rule of thumb:** Use `ArrayList` when you read often, use `LinkedList` when you modify often.
 <br>
-<br># 📅 Day 10: Exploring Sets HashSet and TreeSet<br><br>
+<br>
+#📅 Day 10: Exploring Sets HashSet and TreeSet<br><br>
 
 ## What is a Set?
 
